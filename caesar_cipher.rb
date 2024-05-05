@@ -4,6 +4,8 @@ def caesar_cipher(str, num)
     #int value of a = 97
     #int value of z = 122
 
+    num %= 26
+
     str.codepoints.map do |value|
         if (value >= 65 && value <=90)
             if value + num > 90
